@@ -1,6 +1,6 @@
+// src/App.js
 import React from 'react';
 import './App.css';
-import Card from './components/Card/Card';
 import Category from './components/Category/Category';
 import planDeViajes from './data';
 
@@ -8,17 +8,27 @@ function App() {
   return (
     <>
       <h1>Itinerario</h1>
-      <div>
-        <Category classname="category1"
+      <div className="categories-container">
+        <h1>Alimentación</h1>
+        <Category
+          className="category1"
           items={planDeViajes.alimentacion}
           type="alimentacion"
         />
-        <Category classname="category2"
+        <h1>Hoteles</h1>
+        <Category
+          className="category2"
           items={planDeViajes.hoteles}
           type="hoteles"
         />
-        <Category classname="category3"
-          items={[planDeViajes.destinosdla.playa, planDeViajes.destinosdla.mar, planDeViajes.destinosdla.argentina]}
+        <h1>Lugares</h1>
+        <Category
+          className="category3"
+          items={[
+            planDeViajes.destinosdla.playa,
+            planDeViajes.destinosdla.mar,
+            planDeViajes.destinosdla.argentina
+          ]}
           type="destinosdla"
         />
       </div>
@@ -27,4 +37,5 @@ function App() {
 }
 
 export default App;
+
 
