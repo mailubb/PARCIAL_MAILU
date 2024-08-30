@@ -1,4 +1,4 @@
-//aqui estaba intentando hacer el resumen de la factura, pero no me salio, no se como hacerlo en el app.js
+//aqui estaba intentando hacer el resumen de la factura, pero pos no me salio, no se como hacerlo en el app.js, no se como hacer la funcion de sumarrr
 
 import React from 'react';
 
